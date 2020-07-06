@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab24499466e7e7940b23d46b6fa0f512, type: 3}
+  m_Name: ScienceData
+  m_EditorClassIdentifier: 
+  scienceList:
+  - id: basic
+    caption: Basic
+    description: 
+    icon: {fileID: 21300000, guid: e3ef2ab3a43ad22419f02a3a77faf900, type: 3}
+    price: 200
+    time: 10
+    requested: []
+  - id: advanced
+    caption: Advanced
+    description: 
+    icon: {fileID: 21300000, guid: 0f389e938192cfb4687b90b20416bb46, type: 3}
+    price: 400
+    time: 10
+    requested:
+    - basic
+  - id: superior
+    caption: Superior research
+    description: 
+    icon: {fileID: 21300000, guid: f85ea8cbc65d3b14fa07ef114c13e72b, type: 3}
+    price: 600
+    time: 10
+    requested:
+    - advanced
+  - id: metalurgy
+    caption: Metalurgy
+    description: 
+    icon: {fileID: 21300000, guid: 05aeeaaa6b6fd9242855ccc1a50fb849, type: 3}
+    price: 250
+    time: 10
+    requested:
+    - basic
+  - id: chemistry
+    caption: Chemistry
+    description: 
+    icon: {fileID: 21300000, guid: d20a2ec4a9d17c74aaf8908745f04b21, type: 3}
+    price: 200
+    time: 10
+    requested:
+    - advanced
+  - id: chemistry1
+    caption: Chemistry 1
+    description: 
+    icon: {fileID: 21300000, guid: 1f1da65cd6f9b8f46b42b2c5ebad52ab, type: 3}
+    price: 200
+    time: 10
+    requested:
+    - chemistry
+  - id: chemistry2
+    caption: Chemistry 2
+    description: 
+    icon: {fileID: 21300000, guid: bca9ff7c732f16c49a251f85c7efb400, type: 3}
+    price: 250
+    time: 10
+    requested:
+    - chemistry
+  - id: chemistry3
+    caption: Chemistry 3
+    description: 
+    icon: {fileID: 21300000, guid: b7d9b27c032eb1b409dbb55dcf0587c5, type: 3}
+    price: 300
+    time: 10
+    requested:
+    - chemistry
+    - superior
+  - id: electric
+    caption: Electrical science
+    description: 
+    icon: {fileID: 21300000, guid: d88f0b29c0e59c74d9aaf3c3fd39eeb1, type: 3}
+    price: 300
+    time: 10
+    requested:
+    - advanced
+  - id: electric1
+    caption: Energy cell
+    description: 
+    icon: {fileID: 21300000, guid: 7c8065f8bd7a1404b8c0818169fbcd7d, type: 3}
+    price: 300
+    time: 10
+    requested:
+    - electric
+  - id: electric2
+    caption: Electric 2
+    description: 
+    icon: {fileID: 21300000, guid: d99c2facbcfd6bb40aefe3d6b288c445, type: 3}
+    price: 350
+    time: 10
+    requested:
+    - electric
+  - id: electric3
+    caption: Electric 3
+    description: 
+    icon: {fileID: 21300000, guid: e75518458f95c6741beae8c029724270, type: 3}
+    price: 400
+    time: 10
+    requested:
+    - electric
+    - metalurgy
+  - id: rocket
+    caption: Rocket science
+    description: 
+    icon: {fileID: 21300000, guid: 07c36bf8f31e6b44da8d9ed107163704, type: 3}
+    price: 500
+    time: 10
+    requested:
+    - advanced
+  - id: rocket1
+    caption: Fuel filtering
+    description: 
+    icon: {fileID: 21300000, guid: 904d86bc05441c047b004f1a5b65a7bb, type: 3}
+    price: 300
+    time: 10
+    requested:
+    - rocket
+  - id: rocket2
+    caption: rocket 2
+    description: 
+    icon: {fileID: 21300000, guid: bbd860e4a3710a24b99d213075ce6280, type: 3}
+    price: 300
+    time: 10
+    requested:
+    - metalurgy
+    - rocket
+  - id: nano
+    caption: Nano techology
+    description: 
+    icon: {fileID: 21300000, guid: 5334103c83edb464e8e79581be5c527e, type: 3}
+    price: 1000
+    time: 10
+    requested:
+    - superior
+  - id: nano1
+    caption: Nano robots
+    description: 
+    icon: {fileID: 21300000, guid: 0dd54d5a9675bcb4a8739d3e743dc61f, type: 3}
+    price: 500
+    time: 10
+    requested:
+    - electric2
+    - nano
+  - id: nuclear
+    caption: Nuclear physics
+    description: 
+    icon: {fileID: 21300000, guid: 596b01a7018accd488e452c3d9668949, type: 3}
+    price: 800
+    time: 10
+    requested:
+    - superior
+  - id: nuclear1
+    caption: Nuclear physics  1
+    description: 
+    icon: {fileID: 0}
+    price: 600
+    time: 10
+    requested:
+    - rocket2
+  - id: rocket3
+    caption: Nozzle upgrade
+    description: 
+    icon: {fileID: 21300000, guid: e9acd6d70309c404bbc4a69fff9bc213, type: 3}
+    price: 700
+    time: 10
+    requested:
+    - rocket2
